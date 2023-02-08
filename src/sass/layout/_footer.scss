@@ -1,0 +1,139 @@
+// @include font-style($ff: , $fw: ,
+//         $fs: px, $lh: , $ls: em);
+
+.footer {
+background-color: $footer-bg-color;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 30px 40px 59px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 80px 122px 80px 154px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 80px 216px 80px 168px;
+    }
+}
+
+.footer__logo {
+    font-size: 40px;
+    color: $primary-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 64px;
+    }
+}
+
+.footer-bloc {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        
+    }
+}
+
+.footer-nav {
+    @media screen and (min-width: $tablet) {
+        margin-right: 137px; 
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 199px; 
+    }
+}
+
+.footer-nav__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+.footer-nav__link {
+    @include font-style($ff: 'Montserrat', $fw: 500,
+        $fs: 20px, $lh: 1.2, $ls: 0.02em);
+    color: $primary-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, :focus {
+        color: $accent-color;
+    }
+}
+
+.footer-sn {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.footer-sn__name {
+    @media screen and (max-width: $max-mobile) {
+        display: none;
+    }
+
+    display: flex;
+    align-items: center;
+
+    @include font-style($ff: 'Montserrat', $fw: 400,
+        $fs: 16px, $lh: 1.25, $ls: 0.02em);
+    color: $primary-color;  
+    
+    margin-right: auto;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-sn__item {
+    @media screen and (min-width: $tablet) {
+        width: 144px;
+    
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    } 
+}
+
+.footer-sn__link {
+    display: flex;
+
+    @media screen and (min-width: $tablet) {
+        padding: 8px 12px;
+
+        border: 0.5px solid $primary-color;
+        border-radius: 2px;
+        
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, :focus {
+            border-color: $accent-color;
+        }
+
+        &:hover .footer-sn__name, :focus .footer-sn__name {
+            color: $accent-color;
+        }
+
+        &:hover .social-network-icon, :focus .social-network-icon {
+            fill: $accent-color;
+        }
+    }
+}
