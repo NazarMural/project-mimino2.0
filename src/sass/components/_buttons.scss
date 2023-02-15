@@ -1,0 +1,28 @@
+.hero-button {
+    background: $button-bg-color-hero;
+    border: 2px solid $button-border-color;
+    border-radius: 25px;
+
+    @include font-style($ff: 'Montserrat', $fw: 700,
+        $fs: 16px, $lh: 1.25, $ls: 0.02em);
+    color: $primary-color;
+
+    width: 232px;
+    height: 48px;
+
+    @media screen and (min-width: $tablet) {
+        width: 236px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 258px;
+    }
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, :focus {
+        background-color: $button-bg-color-accent;
+        border-color: $button-border-color-accent;
+    }
+}

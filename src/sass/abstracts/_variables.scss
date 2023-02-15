@@ -2,7 +2,7 @@ $primary-hero-color: #ffffff;
 $primary-header-color: #000000;
 $primary-text-color: #7a7a7a;
 $secondary-text-color: #5F5F5F;
-$white-text-color: #ffffff;
+$text-color: #ffffff;
 $subtitle-color: #b4b4b4;
 $primary-color: #f3c653;
 $accent-color: rgba(243, 198, 83, 0.7);;
@@ -11,6 +11,7 @@ $contact-desktop-color: #828282;
 $brown-color: #c79002;
 $desq-color: #bababa;
 $modal-placeholder-color: #808080;
+$hero-address-text-color: #E5E5E5;
 
 $main-font: 'Montserrat', sans-serif;
 $secondary-font: 'Times New Roman', sans-serif;
@@ -18,7 +19,12 @@ $secondary-font: 'Times New Roman', sans-serif;
 $primary-bg-color: #fffdee;
 $secondary-bg-color: #f0ecd6;
 $footer-bg-color: #0e0c07;
+$primary-modal-text-color: #000000;
 
 $button-bg-color: #000000;
+$button-bg-color-hero: rgba(0, 0, 0, 0.4);
+$button-bg-color-accent: #ffffff;
+$button-border-color: #ffffff;
+$button-border-color-accent: #f3c653;
 
-$primary-modal-text-color: #000000;
+$hero-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
