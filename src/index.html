@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
 
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -14,8 +16,13 @@
     <!-- main -->
     <main>
       <include src="./partials/homepage_sections/hero.html"></include>
+      <include
+        src="./partials/homepage_sections/about-restaurant.html"
+      ></include>
     </main>
     <!-- footer -->
     <include src="./partials/footer.html"></include>
+
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
   </body>
 </html>

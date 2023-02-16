@@ -1,0 +1,43 @@
+.about-restaurant {
+    background-color: $primary-bg-color;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+.about-restaurant__slogan {
+    margin-bottom: 12px;
+}
+
+.about-restaurant__title {
+    margin-bottom: 12px;
+}
+
+.about-restaurant__first-description {
+    margin-bottom: 28px;
+    max-width: 258px;
+}
+
+.about-restaurant__first-photo {
+    margin-left: auto;
+    margin-bottom: 32px;
+
+    box-shadow: $shadow-photo;
+    border-radius: 2px;
+}
+
+.about-restaurant__secondary-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 32px;
+}
+
+.about-restaurant__secondary-photo {
+    box-shadow: $shadow-photo;
+    border-radius: 2px;
+}
+
+.about-restaurant__secondary-description {
+    color: $brown-color;
+}

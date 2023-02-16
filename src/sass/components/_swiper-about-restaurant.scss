@@ -1,0 +1,43 @@
+.about-restaurant-slider {
+    transform: translateX(15px);
+    margin-left: -15px;
+}
+
+.about-restaurant-swiper {
+    position: relative;
+    max-width: 330px;
+
+    margin-left: auto;
+
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.about-restaurant-swiper__wrapper {
+    margin-bottom: 20px;
+}
+
+.about-restaurant-swiper__slide {
+    width: 245px;
+}
+
+.about-restaurant-swiper-btns {
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+
+    margin-right: 15px;
+}
+.about-restaurant-swiper-btns__button {
+    border: 0px;
+    height: 32px;
+    background-color: transparent;
+}
+
+.about-restaurant-swiper-btns__icon {
+    &:hover, :focus {
+        fill: $accent-color;
+    }
+}
+

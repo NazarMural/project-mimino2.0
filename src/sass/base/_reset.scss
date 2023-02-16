@@ -10,7 +10,6 @@ a {
 
 img {
     display: block;
-    width: 100%;
     height: auto;
 }
 
@@ -30,6 +29,10 @@ select,
 input,
 button {
     outline: none;
+}
+
+button {
+    padding: 0;
 }
 
 select {
