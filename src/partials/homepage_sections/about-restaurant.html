@@ -1,17 +1,19 @@
 <section class="about-restaurant">
   <div class="container">
     <div class="about-restaurant__first-block">
-      <p class="mimiho-slogan about-restaurant__slogan">
-        Amet minim mollit non
-      </p>
-      <h3 class="mimiho-title about-restaurant__title">
-        Mimih<span class="last-letter">o</span>
-      </h3>
-      <p class="mimiho-description about-restaurant__first-description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+      <div class="about-restaurant__info">
+        <p class="mimiho-slogan about-restaurant__slogan">
+          Amet minim mollit non
+        </p>
+        <h3 class="mimiho-title about-restaurant__title">
+          Mimih<span class="last-letter">o</span>
+        </h3>
+        <p class="mimiho-description about-restaurant__first-description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
       <picture>
         <source
           srcset="
@@ -19,6 +21,21 @@
             ./images/mobile-image/mobile-photo-restaurant-3@x2.jpg 2x
           "
           media="(max-width: 1023px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/tablet-image/tablet-photo-restaurant-3.jpg    1x,
+            ./images/tablet-image/tablet-photo-restaurant-3@x2.jpg 2x
+          "
+          media="(max-width: 1279px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/desktop-image/desktop-photo-restaurant-3.jpg    1x,
+            ./images/desktop-image/desktop-photo-restaurant-3@x2.jpg 2x
+          "
           type="image/jpeg"
         />
         <img
@@ -36,6 +53,21 @@
             ./images/mobile-image/mobile-photo-restaurant-4@x2.jpg 2x
           "
           media="(max-width: 1023px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/tablet-image/tablet-photo-restaurant-4.jpg    1x,
+            ./images/tablet-image/tablet-photo-restaurant-4@x2.jpg 2x
+          "
+          media="(max-width: 1279px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/desktop-image/desktop-photo-restaurant-4.jpg    1x,
+            ./images/desktop-image/desktop-photo-restaurant-4@x2.jpg 2x
+          "
           type="image/jpeg"
         />
         <img
@@ -64,6 +96,21 @@
                 media="(max-width: 1023px)"
                 type="image/jpeg"
               />
+              <source
+                srcset="
+                  ./images/tablet-image/tablet-slide-photo-restaurant-3.jpg    1x,
+                  ./images/tablet-image/tablet-slide-photo-restaurant-3@x2.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/desktop-image/desktop-slide-photo-restaurant-3.jpg    1x,
+                  ./images/desktop-image/desktop-slide-photo-restaurant-3@x2.jpg 2x
+                "
+                type="image/jpeg"
+              />
               <img
                 class="about-restaurant-swiper__img"
                 src="./images/mobile-image/mobile-slide-photo-restaurant-3.jpg"
@@ -79,6 +126,21 @@
                   ./images/mobile-image/mobile-slide-photo-restaurant-4@x2.jpg 2x
                 "
                 media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/tablet-image/tablet-slide-photo-restaurant-4.jpg    1x,
+                  ./images/tablet-image/tablet-slide-photo-restaurant-4@x2.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/desktop-image/desktop-slide-photo-restaurant-4.jpg    1x,
+                  ./images/desktop-image/desktop-slide-photo-restaurant-4@x2.jpg 2x
+                "
                 type="image/jpeg"
               />
               <img
@@ -98,6 +160,21 @@
                 media="(max-width: 1023px)"
                 type="image/jpeg"
               />
+              <source
+                srcset="
+                  ./images/tablet-image/tablet-slide-photo-restaurant-1.jpg    1x,
+                  ./images/tablet-image/tablet-slide-photo-restaurant-1@x2.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/desktop-image/desktop-slide-photo-restaurant-1.jpg    1x,
+                  ./images/desktop-image/desktop-slide-photo-restaurant-1@x2.jpg 2x
+                "
+                type="image/jpeg"
+              />
               <img
                 class="about-restaurant-swiper__img"
                 src="./images/mobile-image/mobile-slide-photo-restaurant-8.jpg"
@@ -115,6 +192,21 @@
                 media="(max-width: 1023px)"
                 type="image/jpeg"
               />
+              <source
+                srcset="
+                  ./images/tablet-image/tablet-slide-photo-restaurant-2.jpg    1x,
+                  ./images/tablet-image/tablet-slide-photo-restaurant-2@x2.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/desktop-image/desktop-slide-photo-restaurant-2.jpg    1x,
+                  ./images/desktop-image/desktop-slide-photo-restaurant-2@x2.jpg 2x
+                "
+                type="image/jpeg"
+              />
               <img
                 class="about-restaurant-swiper__img"
                 src="./images/mobile-image/mobile-slide-photo-restaurant-9.jpg"
@@ -129,7 +221,11 @@
             type="button"
             class="about-restaurant-swiper-btns__button button-prev"
           >
-            <svg class="about-restaurant-swiper-btns__icon" width="32" height="32">
+            <svg
+              class="about-restaurant-swiper-btns__icon"
+              width="32"
+              height="32"
+            >
               <use href="./images/sprite.svg#icon-cil-arrow-left-swiper"></use>
             </svg>
           </button>
@@ -137,7 +233,11 @@
             type="button"
             class="about-restaurant-swiper-btns__button button-next"
           >
-            <svg class="about-restaurant-swiper-btns__icon" width="32" height="32">
+            <svg
+              class="about-restaurant-swiper-btns__icon"
+              width="32"
+              height="32"
+            >
               <use href="./images/sprite.svg#icon-cil-arrow-right-swiper"></use>
             </svg>
           </button>

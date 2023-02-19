@@ -45,6 +45,10 @@ body {
     @include font-style($ff: 'Times New Roman', $fw: 400,
             $fs: 20px, $lh: 1.15, $ls: 0);
     color: $slogan-title-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 32px;
+    }
 }
 
 .mimiho-title {
@@ -52,10 +56,18 @@ body {
             $fs: 40px, $lh: 1.08, $ls: 0.3em);
     color: $mimiho-title-color;
     text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 64px;
+    }
 }
 
 .mimiho-description {
     @include font-style($ff: 'Montserrat', $fw: 600,
             $fs: 12px, $lh: 1.25, $ls: 0.02em);
     color: $primary-text-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
 }

@@ -15,6 +15,24 @@ function swiperSlider() {
                 navigation: {
                     nextEl: arrowRight,
                     prevEl: arrowLeft
+                },
+
+                breakpoints: {
+                    // when window width is >= 320px
+                    414: {
+                        slidesPerView: 1.315,
+                        spaceBetween: 25,
+                    },
+                    // when window width is >= 768px
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    },
+                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    }
                 }
             });
         });
