@@ -1,2 +1,0 @@
-window.addEventListener("load",(function(){const e=document.querySelectorAll('[data-slider="data-slider"]');e&&e.forEach((e=>{let t=e.querySelector(".button-prev"),r=e.querySelector(".button-next");new Swiper(e.querySelector(".about-restaurant-swiper"),{speed:1e3,slidesPerView:1.315,spaceBetween:25,loop:!0,navigation:{nextEl:r,prevEl:t},breakpoints:{414:{slidesPerView:1.315,spaceBetween:25},1024:{slidesPerView:2,spaceBetween:40},1200:{slidesPerView:2,spaceBetween:40}}})}))}),!1);
-//# sourceMappingURL=index.88863a69.js.map
