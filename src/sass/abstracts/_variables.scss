@@ -7,6 +7,7 @@ $slogan-title-color: #b4b4b4;
 $primary-color: #f3c653;
 $accent-color: rgba(243, 198, 83, 0.7);;
 $mimiho-title-color: #494848;
+$secondary-mimiho-title-color: #ffffff;
 $contact-desktop-color: #828282;
 $brown-color: #c79002;
 $desq-color: #bababa;
@@ -21,11 +22,12 @@ $secondary-bg-color: #f0ecd6;
 $footer-bg-color: #0e0c07;
 $primary-modal-text-color: #000000;
 
-$button-bg-color: #000000;
-$button-bg-color-hero: rgba(0, 0, 0, 0.4);
+$button-bg-color-primary: rgba(0, 0, 0, 0.4);
+$button-bg-color-secondary: #000000;
 $button-bg-color-accent: #ffffff;
 $button-border-color: #ffffff;
 $button-border-color-accent: #f3c653;
 
 $hero-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+$restaurant-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76));
 $shadow-photo: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);

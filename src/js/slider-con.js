@@ -18,17 +18,42 @@ function swiperSlider() {
                 },
 
                 breakpoints: {
-                    // when window width is >= 320px
                     414: {
                         slidesPerView: 1.315,
                         spaceBetween: 25,
                     },
-                    // when window width is >= 768px
                     1024: {
                         slidesPerView: 2,
                         spaceBetween: 40
                     },
-                    // when window width is >= 1200px
+                    1200: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    }
+                }
+            });
+
+            let swiperRestaurant = new Swiper(slider.querySelector('.restaurant-swiper'), {
+                speed: 1000,
+
+                slidesPerView: 1.315,
+                spaceBetween: 20,
+                loop: true,
+                
+                navigation: {
+                    nextEl: arrowRight,
+                    prevEl: arrowLeft
+                },
+
+                breakpoints: {
+                    414: {
+                        slidesPerView: 1.315,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 2.29,
+                        spaceBetween: 34
+                    },
                     1200: {
                         slidesPerView: 2,
                         spaceBetween: 40

@@ -1,0 +1,184 @@
+.restaurant {
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+    }
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: $restaurant-gradient, url(./images/mobile-image/mobile-hero-6.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: $restaurant-gradient, url("./images/mobile-image/mobile-hero-6@x2.jpg");
+    }
+
+    @media screen and (min-width: $tablet-hero) {
+        background-image: $restaurant-gradient, url(./images/tablet-image/tablet-hero-6.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: $restaurant-gradient, url("./images/tablet-image/tablet-hero-6@x2.jpg");
+        }
+    }
+
+    @media screen and (min-width: $desktop-hero) {
+        background-image: $restaurant-gradient, url(./images/desktop-image/desktop-hero-6.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: $restaurant-gradient, url("./images/desktop-image/desktop-hero-6@x2.jpg");
+        }
+    }
+}
+
+.restaurant__information-block {
+    width: 259px;
+
+    margin-left: auto;
+    margin-bottom: 48px;
+
+    @media screen and (min-width: $tablet) {
+        width: 610px;
+        
+        margin-left: 231px;
+        margin-bottom: 40px;
+    }
+}
+
+.restaurant__navigation-block {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.restaurant__mimiho-title {
+    color: $secondary-mimiho-title-color;
+
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 16px;
+    }
+}
+
+.restaurant__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $text-color;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+.restaurant__description {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: $desq-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
+}
+
+.restaurant-slider {
+    margin-bottom: 32px;
+    margin-left: -15px;
+    transform: translateX(15px);
+}
+
+.restaurant-slider{ 
+    .swiper-slide {
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: ease-in-out 0.5s;
+            width: 270px;       
+            height: 270px;
+            overflow: hidden;
+            
+            &.swiper-slide-next {
+                // краще виставляти у %
+                // зараз 17.3%  дорівнює 200px
+                //width: 200px !important;
+                width: 25% !important;
+            }
+        }
+    }
+}
+
+.restaurant-swiper {
+
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+
+    max-width: 374px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 662px;
+    }
+}
+
+.restaurant-swiper__wrapper {
+    margin-bottom: 16px;
+}
+
+.restaurant-swiper-btns {
+    display: flex;
+    gap: 32px;
+}
+
+.restaurant-swiper-btns__button {
+    height: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+.restaurant-swiper-btns__icon {
+    fill: $text-color;
+}
+
+.restaurant-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 80px;
+        margin-right: 29px;
+    }
+}
+
+.restaurant-btns-mobile {
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.restaurant-btns-desktop {
+    @media screen and (max-width: $max-mobile) {
+        display: none;
+    }
+}

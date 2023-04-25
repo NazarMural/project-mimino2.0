@@ -1,5 +1,5 @@
 .hero-button {
-    background: $button-bg-color-hero;
+    background: $button-bg-color-primary;
     border: 2px solid $button-border-color;
     border-radius: 25px;
 
@@ -25,4 +25,23 @@
         background-color: $button-bg-color-accent;
         border-color: $button-border-color-accent;
     }
+}
+
+.restaurant-btns__button {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $primary-color;
+    background: $button-bg-color-primary;
+    border: 2px solid $button-border-color;
+    border-radius: 25px;
+    width: 236px;
+
+    padding: 14px 0;
+}
+
+.restaurant-btns__button-link {
+    text-align: center;
 }
